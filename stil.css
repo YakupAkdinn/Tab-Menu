@@ -1,0 +1,104 @@
+body{
+background-color: #ccc;
+font-family:"Roboto",sans-serif;
+    }
+.mytabs{
+display :flex;
+flex-wrap: wrap;
+width: 300px;
+margin:  50px auto;
+padding:25px;
+
+
+}
+.mytabs input[type="radio"]{
+
+display:none;
+
+}
+.mytabs label{
+
+    padding:14px;
+    background: #e2e2e2;
+    font-weight: bold;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;/*none lar kopyalama engelleyici*/
+}
+.mytabs .tab{
+    
+width: 100%;
+padding:20px;
+background: #fff;
+order:1; /*butonları yan yana getirir*/
+display:none;
+
+
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+.mytabs input[type="radio"]:checked+label{
+background-color: #fff;
+
+}
+.mytabs input[type="text"]
+{
+border-radius: 5px;
+border: 1px solid #7E8993;
+padding: 10px 0 10px 7px;
+font-size: 16px;
+display: block;
+width: 100%;
+}
+.mytabs input[type="password"]
+{
+border-radius: 5px;
+border: 1px solid #7E8993;
+padding: 10px 0 10px 7px;
+font-size: 16px;
+display: block;
+width: 100%;
+}
+.mytabs input[type="text"]:focus
+{
+outline:none;
+border-bottom:2px solid skyblue;
+
+}
+
+
+.mytabs input[type="password"]:focus
+{
+outline:none;
+border-bottom:2px solid skyblue;
+}
+.mytabs input[type='submit']
+{
+    
+width:65px;
+height:35px;
+border-radius:3px;
+border:none;
+background-color:#ccc;
+color:black;
+font-weight: bold;
+font-size:14px;
+margin:1px;
+}
+.mytabs input[type='submit']:hover
+{
+    background-color:#b5b5b5 ;
+transition-duration:0.5s;
+cursor:pointer;
+}
+
+
+
+
+
